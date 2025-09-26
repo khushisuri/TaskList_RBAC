@@ -1,0 +1,26 @@
+# Ignore dependencies
+node_modules
+**/node_modules
+
+# Ignore build outputs
+dist
+.tmp
+out
+
+# Ignore VCS and editor junk
+.git
+.gitignore
+*.log
+*.swp
+*.swo
+.DS_Store
+.idea
+.vscode
+
+# Nx cache
+.nx
+.cache
+
+# Test / coverage artifacts
+coverage
+reports
