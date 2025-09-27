@@ -1,21 +1,19 @@
-# fly.toml app configuration file generated for server-blue-waterfall-7281 on 2025-09-26T02:36:30-04:00
+# fly.toml app configuration file generated for server-long-fog-7351 on 2025-09-26T12:55:35-04:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'server-blue-waterfall-7281'
+app = 'server-long-fog-7351'
 primary_region = 'yyz'
 
 [build]
-context = ".." 
-dockerfile = "/Dockerfile"
 
 [http_service]
   internal_port = 8080
   force_https = true
-  auto_stop_machines = 'stop'
+  auto_stop_machines = "off"
   auto_start_machines = true
-  min_machines_running = 0
+  min_machines_running = 1
   processes = ['app']
 
 [[vm]]

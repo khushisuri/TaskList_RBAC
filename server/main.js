@@ -34,11 +34,11 @@ app.use(cors());
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
 try {
-  mongoose.connect(process.env.MONGO_URL);
+  await mongoose.connect(process.env.MONGO_URL);
   const port = process.env.PORT || 8080;
-  const server = app.listen(port, () => {
-    console.log(`Listening at http://localhost:${port}`);
-  });
+  const server = app.listen(port, '0.0.0.0', () => {
+  console.log(`Listening on 0.0.0.0:${port}`);
+});
   server.on('error', console.error);
 } catch (error) {
   console.error(' MongoDB connection error:', error.message);
