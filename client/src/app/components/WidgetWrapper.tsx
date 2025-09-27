@@ -1,6 +1,5 @@
-import styled from '@emotion/styled';
-import { Box, useTheme } from '@mui/material';
-import React from 'react';
+import { styled } from '@mui/material/styles'; 
+import { Box } from '@mui/material';
 
 const WidgetWrapper = styled(Box)(({ theme }) => ({
   backgroundColor: theme.palette.background.paper,

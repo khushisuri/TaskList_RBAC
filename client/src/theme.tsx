@@ -1,5 +1,4 @@
 import type { PaletteMode } from '@mui/material';
-import { teal } from '@mui/material/colors';
 const tokens = {
   black: {
     100: '#cecece',
